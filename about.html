@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<title>Page Title</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper active-nav-link">    
+                    <a href="about.html">About</a>
+                </div>
+                <div class="nav-link-wrapper">    
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="nav-link-wrapper">    
+                    <a href="español.html">Español</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div> LAW OFFICE OF ALEXANDER BLACKFORD </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content-wrapper">
+            <div class="two-column-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/attorney.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="">
+                        </div>
+
+                        <div class="subtitleAbout">
+                            <h2>About</h2>
+                            <p>
+                            Alexander Blackford is a worker's compensation attorney who uses 
+                            a results-driven approach in employment law, debt relief and criminal  
+                            defense. With legal solutions that put you first, 
+                            Alex understands what you're going through: he's been there.
+                            </p>
+                            <p>
+                            "I became an attorney because I wanted to help people in a meaningful way. 
+                            When I got injured at work, I learned that it's important to fight for justice 
+                            and equality. When your rights are violated, you have to stand up and empower yourself.   
+                            I provide the voice that advocates for your best interests and gets the legal 
+                            system to work for you. I've spent my career making sure that my clients 
+                            receive the settlements they're owed, the best healthcare available, and 
+                            the justice they deserve." 
+                            </p>
+                            <p>
+                            - Alex Blackford
+                            </p> 
+                        </div>
+                    </div>
+                </div>        
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link-bottom">
+                    <a href="employmentLaw.html">Employment Law</a>
+                </div>
+                <div class="nav-link-wrapper">    
+                    <a href="debtRelief.html">Debt Relief</a>
+                </div>
+                <div class="nav-link-wrapper">    
+                    <a href="criminalDefense.html">Criminal Defense</a>
+                </div>
+            </div>    
+
+            <div class="right-side-bottom">
+                <div class="brand-bottom">
+                    <div> CALL FOR A FREE CONSULTATION (800) 988-9169 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')   
+
+portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+        portfolioItem.childNodes[1].classList.add('img-darken');
+    })
+    portfolioItem.addEventListener('mouseout', () => {
+        portfolioItem.childNodes[1].classList.remove('img-darken');
+    })
+})
+</script>
+
+</html>
