@@ -39,12 +39,14 @@ body {
 }
 
 .nav-wrapper > .center > div {
+    padding-left: 40px;
 }
 
 .nav-wrapper > .right-side > div {
     display:flex;
-    font-size: 1.0em;
+    font-size: 1em;
     padding-top: 10px;
+    padding-right: 5px;
 }
 
 
@@ -83,8 +85,9 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;   
     padding: 0px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 0px;
+
 }
 
 .portfolio-item-wrapper {
@@ -93,7 +96,7 @@ body {
 
 .portfolio-img-background {
     height: 350px;
-    width: 100%;
+    width: 90%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -117,14 +120,42 @@ body {
     margin-bottom: 20px;
 }
 
-.img-text-wrapper .subtitle{
+.img-text-wrapper .subtitle-left{
     transition: 1s;
     font-weight: 600;
     color: transparent;
+    padding-right: 55px;
 
 }
 
-.img-text-wrapper:hover .subtitle {
+.img-text-wrapper .subtitle-center {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+    padding-right: 36px;
+    padding-bottom: 30px;
+}
+
+.img-text-wrapper .subtitle-right {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+    padding-right: 35px;
+    padding-bottom: 30px;
+}
+
+
+.img-text-wrapper:hover .subtitle-left {
+    font-weight: 600;
+    color: lightgray;
+}
+
+.img-text-wrapper:hover .subtitle-center {
+    font-weight: 600;
+    color: lightgray;
+}
+
+.img-text-wrapper:hover .subtitle-right {
     font-weight: 600;
     color: lightgray;
 }
@@ -288,13 +319,27 @@ body {
 .left-side-bottom {
     display: flex;
     display: flex;
+    padding-left: 200px;
 }
 
 .nav-wrapper-bottom > .left-side-bottom > div {
     margin-right: 20px;
     font-size: 0.9em;
+}
+
+.nav-wrapper-bottom > .left-side-bottom > .left-bottom > div {
+    padding-right: 100px;
+}
+
+.nav-wrapper-bottom > .left-side-bottom > .center-bottom > div {
 
 }
+
+.nav-wrapper-bottom > .left-side-bottom > .right-bottom > div {
+    padding-right: 30px;
+
+}
+
 
 .nav-link-wrapper {
     height: 22px;
@@ -358,5 +403,4 @@ body {
 .active-nav-link a {
     color: gray !important;
 }
-
 
