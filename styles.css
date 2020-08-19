@@ -35,7 +35,18 @@ body {
     margin-right: 20px;
     font-size: 0.9em;
     text-transform: uppercase;
+    padding-top: 10px;
 }
+
+.nav-wrapper > .center > div {
+}
+
+.nav-wrapper > .right-side > div {
+    display:flex;
+    font-size: 1.0em;
+    padding-top: 10px;
+}
+
 
 .nav-link-wrapper {
     height: 22px;
@@ -270,7 +281,8 @@ body {
 }
 
 .right-side-bottom {
-    color: gray;
+    color: black;
+    font-weight: 400;
 }
 
 .left-side-bottom {
@@ -281,7 +293,7 @@ body {
 .nav-wrapper-bottom > .left-side-bottom > div {
     margin-right: 20px;
     font-size: 0.9em;
-    text-transform: uppercase;
+
 }
 
 .nav-link-wrapper {
@@ -346,4 +358,5 @@ body {
 .active-nav-link a {
     color: gray !important;
 }
+
 
