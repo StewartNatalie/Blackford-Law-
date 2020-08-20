@@ -43,8 +43,9 @@
             <div class="portfolio-items-wrapper">
 
                 <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-image:url(images/constructionhappy.jpg)" id="constructionhappy"></div>
-                    <a href="employmentLaw.html" id="constructionhappy"></a>
+                    
+                        <div class="portfolio-img-background" style="background-image:url(images/constructionhappy.jpg)" img id="first"></div>
+                            <div id="constructionhappy" onclick="location.href"='http://www.google.com';" style="cursor:pointer;"></div>
 
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
@@ -52,14 +53,15 @@
 
                         <div class="subtitle-left">
                             <h2>Compensation for Injured Workers</h2>
+                            <a href="employmentLaw.html"></a>
                         </div> 
 
                     </div>
                 </div>
 
                 <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-image:url(images/jail1.jpg)" id="first"></div>
-
+                    <div class="portfolio-img-background" style="background-image:url(images/jail1.jpg)" img id="second"></div>
+                   
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
                             <img src="" />
@@ -74,7 +76,7 @@
                 </div>
 
                 <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style= "background-image:url(images/happy1.jpg)" id="second"></div>
+                    <div class="portfolio-img-background" style= "background-image:url(images/happy1.jpg)" img id="third"></div>
 
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
@@ -140,17 +142,34 @@ portfolioItems.forEach(portfolioItem => {
     })
 })
 
-document.querySelector('first').addEventListener('click',() => {
-    window.location = "debtRelief.html";
+portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('onclick', () => {
+        portfolioItem.childNodes[1].classList.add('link/images/employmentLaw.html');
+    })
+    portfolioItem.addEventListener('mouseout', () => {
+        portfolioItem.childNodes[1].classList.remove('');
+    })
 })
+
+element.setAttribute(onclick)
+
+document.getElementById("first").onclick = function ()
+{
+document.querySelector('first').addEventListener('onclick',() => {
+    window.location = employmentLaw.html;
+})
+}
+
+
 
 document.querySelector('second').addEventListener('click', () => {
     window.location = "criminalDefense.html";
 })
 
 document.querySelector('third').addEventListener('click',() => {
-    window.location = "EmploymentLaw.com";
+    window.location = "debtRelief.html";
 })
+
 </script>
 
 </html>
