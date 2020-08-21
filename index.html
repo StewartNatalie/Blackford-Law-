@@ -40,25 +40,25 @@
         </div>
         
         <div class="content-wrapper">
+            
             <div class="portfolio-items-wrapper">
 
+                <a href="employmentLaw.html">
                 <div class="portfolio-item-wrapper">
-                    
-                        <div class="portfolio-img-background" style="background-image:url(images/constructionhappy.jpg)" img id="first"></div>
-                            <div id="constructionhappy" onclick="location.href"='http://www.google.com';" style="cursor:pointer;"></div>
-
+                    <div class="portfolio-img-background" style="background-image:url(images/constructionhappy.jpg)"></div>
+                            
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
                         </div>
 
                         <div class="subtitle-left">
                             <h2>Compensation for Injured Workers</h2>
-                            <a href="employmentLaw.html"></a>
                         </div> 
-
                     </div>
                 </div>
+                </a>
 
+                <a href="criminalDefense.html">
                 <div class="portfolio-item-wrapper">
                     <div class="portfolio-img-background" style="background-image:url(images/jail1.jpg)" img id="second"></div>
                    
@@ -74,7 +74,9 @@
 
                     </div>
                 </div>
+                </a>
 
+                <a href="debtRelief.html">
                 <div class="portfolio-item-wrapper">
                     <div class="portfolio-img-background" style= "background-image:url(images/happy1.jpg)" img id="third"></div>
 
@@ -89,43 +91,15 @@
 
                     </div>
                 </div>
+                </a>
 
             </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="nav-wrapper-bottom">
-            <div class="left-side-bottom">
-                <div class="left-bottom">
-                    <div class="nav-link-wrapper">
-                        <a href="employmentLaw.html">Employment Law</a>
-                    </div>
-                </div>
-            </div>
-
-                <div class="center-bottom">
-                    <div class="nav-link-wrapper">    
-                        <a href="criminalDefense.html">Criminal Defense</a>
-                    </div>
-                </div>
-
-                <div class="right-bottom">
-                    <div class="nav-link-wrapper">    
-                        <a href="debtRelief.html">Debt Relief</a>
-                    </div>
-                </div>    
-
-            <div class="right-side-bottom">
-                <div class="brand-bottom">
-                    <div></div>
-                </div>
-            </div>
+            </a>
         </div>
     </div>
 
     <div class= "footer">
-        <p>© 2020 The Law Office of Alexander Blackford. All Rights Reserved. Privacy Policy | 3756 W. Avenue 40 Suite K 450 Los Angeles California 90065 | Website by DSGNstuff  
+        <p>© 2020 The Law Office of Alexander Blackford. All Rights Reserved. | (800) 988 - 9169 | 3756 W. Avenue 40 Suite K 450 Los Angeles California 90065 | Website by DSGNstuff  
         </p>
     </div>
 </body>
@@ -140,34 +114,6 @@ portfolioItems.forEach(portfolioItem => {
     portfolioItem.addEventListener('mouseout', () => {
         portfolioItem.childNodes[1].classList.remove('img-darken');
     })
-})
-
-portfolioItems.forEach(portfolioItem => {
-    portfolioItem.addEventListener('onclick', () => {
-        portfolioItem.childNodes[1].classList.add('link/images/employmentLaw.html');
-    })
-    portfolioItem.addEventListener('mouseout', () => {
-        portfolioItem.childNodes[1].classList.remove('');
-    })
-})
-
-element.setAttribute(onclick)
-
-document.getElementById("first").onclick = function ()
-{
-document.querySelector('first').addEventListener('onclick',() => {
-    window.location = employmentLaw.html;
-})
-}
-
-
-
-document.querySelector('second').addEventListener('click', () => {
-    window.location = "criminalDefense.html";
-})
-
-document.querySelector('third').addEventListener('click',() => {
-    window.location = "debtRelief.html";
 })
 
 </script>
