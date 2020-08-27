@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<title>Page Title</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">    
+                    <a href="law.html">Law</a>
+                </div>
+                <div class="nav-link-wrapper">    
+                    <a href="about.html">About</a>
+                </div>
+                <div class="nav-link-wrapper">    
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="nav-link-wrapper">    
+                    <a href="español.html">Español</a>
+                </div>
+            </div>
+            
+            <a href="index.html">
+            <div class="center">
+                <div class="logo-img-wrapper">
+                    <img src="images/logovert.jpg" height="40px" width="50px"/>
+                </div>
+            </div>
+            </a>    
+
+
+            <div class="right-side">
+                <div class="brand">
+                    <div> LAW OFFICE OF ALEXANDER BLACKFORD </div>
+                </div>
+            </div>
+            
+
+        </div>
+        
+        <div class="content-wrapper">
+            
+            
+            <div class="portfolio-items-wrapper">
+
+                
+                <a href="#demo-box-employment-law"><div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/surgeoncircle.jpg)"></div>
+                            
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                        </div>
+
+                        <div class="subtitle-left">
+                            <h2>Injured at work?</h2>
+                        </div> 
+                    </div>
+                </div></a>
+                
+             
+
+               
+                <a href="#demo-box-criminal-defense"><div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/policeline.jpg)" img id="second"></div>
+                   
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="" />
+                        </div>
+
+                        <div class="subtitle-center">
+                            <h2>Need legal help?</h2>
+                            <p></p>
+                        </div> 
+
+                    </div>
+                </div></a>
+           
+
+                
+                <a href="#demo-box-debt-relief"><div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style= "background-image:url(images/sadness.jpg)" img id="third"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="">
+                        </div>
+
+                        <div class="subtitle-right">
+                            <h2>Lost your job?</h2>
+                        </div> 
+
+                    </div>
+                </div></a>
+                
+
+            </div>
+        
+          
+        </div>
+    </div>
+
+    <div id="demo-box-top">
+    </div>
+
+    <div id="demo-box">
+    <div class= "footer-top">
+        <h3>
+        Sometimes life happens. We want to help.
+        </h3>
+        <p>
+        With legal guidance and an advocate you cares, we'll get you through this.
+        </p>
+        <p>
+        
+        </p>
+    </div>
+    </div>
+
+    <div id="demo-box-employment-law">
+    <h3>
+    Employment Law
+    </h3>
+    <p>
+    bla bla bla
+    </p>
+    </div>
+
+        <div id="demo-box-criminal-defense">
+    <h2>
+   Criminal Defense
+    </h2>
+    <p>
+    bla bla bla
+    </p>
+    </div>
+
+        <div id="demo-box-debt-relief">
+    <h2>
+    Debt Relief
+    </h2>
+    <p>
+    bla bla bla
+    </p>
+    </div>
+
+    <div id="demo-box-bottom">
+    </div>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')   
+
+portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+        portfolioItem.childNodes[1].classList.add('img-darken');
+    })
+    portfolioItem.addEventListener('mouseout', () => {
+        portfolioItem.childNodes[1].classList.remove('img-darken');
+    })
+})
+
+</script>
+
+</html>
