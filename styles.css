@@ -1,4 +1,3 @@
-
 /* Master Styles */
 
 body {
@@ -11,15 +10,70 @@ body {
     grid-template-columns: 1fr;
 }
 
+
+#demo-box-top {
+    background-color: white;
+    height: 40px;
+    width: 1000px;
+}
+
+#demo-box {
+    background-color: rgb(224, 210, 163);
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.footer-top {
+    text-align: center;
+    font-size: 1.3em;
+    color: white;
+    font-weight: 600;
+    text-transform: ;
+    padding-top: 20px;  
+    padding-bottom: 25px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.footer-top a {
+    color:white;
+    text-decoration: none;
+    transition: color 0.5s;
+    font-weight: 600;
+}
+
+.footer-top:hover {
+    border-bottom: 1px solid white;
+}
+
+.footer-top a:hover {
+    color:rgb(88, 116, 88);
+    font-weight: 600;
+}
+
+.active-footer-top {
+    border-bottom: 1px solid white;
+}
+
+.active-footer-top a {
+    color: black !important;
+}
+
 .footer {
     text-align: center;
     font-size: 0.8em;
     color: gray;
     text-transform: uppercase;
-    padding-top: 40px;
+}
+
+#demo-box-bottom {
+    background-color: white;
+    height: 30px;
+    width: 1000px;
 }
 
 /* Nav Styles*/
+
 
 .nav-wrapper {
     display: flex;
@@ -28,7 +82,6 @@ body {
 }
 
 .left-side {
-    display: flex;
     display: flex;
 }
 
@@ -40,7 +93,7 @@ body {
 }
 
 .nav-wrapper > .center > div {
-    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .nav-wrapper > .right-side > div {
@@ -78,6 +131,8 @@ body {
 .active-nav-link a {
     color: black !important;
 }
+
+
 
 
 /* Portfolio Styles*/
@@ -169,78 +224,10 @@ body {
 
 /* About Page Styles*/
 
-.nav-wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 38px;
-}
-
-.left-side {
-    display: flex;
-    display: flex;
-}
-
-.nav-wrapper > .left-side > div {
-    margin-right: 20px;
-    font-size: 0.9em;
-    text-transform: uppercase;
-    padding-top: 10px;
-}
-
-.nav-wrapper > .center > div {
-    padding-left: 40px;
-}
-
-.nav-wrapper > .right-side > div {
-    display:flex;
-    font-size: 1em;
-    padding-top: 10px;
-    padding-right: 5px;
-}
-
-
-.nav-link-wrapper {
-    height: 22px;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;
-}
-
-.nav-link-wrapper a {
-    color: #8a8a8a;
-    text-decoration: none;
-    transition: color 0.5s;
-}
-
-.nav-link-wrapper:hover {
-    border-bottom: 1px solid white;
-}
-
-.nav-link-wrapper a:hover {
-    color: whitesmoke;
-}
-
-.active-nav-link {
-    border-bottom: 1px solid white;
-}
-
-.active-nav-link a {
-    color: black !important;
-}
-
-
-
-.two-column-wrapper {
-    display: grid;
-    color: whitesmoke;
-    padding: 0px;
-    padding-left: px;
-    padding-right: px;
-}
-
 .img-text-wrapper .subtitleAbout {
     text-align: left;
-    padding-bottom: 35px;
-    padding-right: 100px;
+    padding-bottom: 45px;
+    padding-left: 55px;
 }
 
 .img-text-wrapper .subtitleAbout {
@@ -250,7 +237,7 @@ body {
 }
 
 .img-text-wrapper:hover .subtitleAbout {
-    font-weight: 600;
+    font-weight: 500;
     color: lightgray;
 }
 
@@ -261,13 +248,15 @@ body {
 
 .img-text-wrapper .subtitleAbout h2 {
     transition: 1s;
-    font-weight: 600;
+    font-weight: 500;
     color: transparent;
 }
 
 .img-text-wrapper:hover .subtitleAbout h2 {
-    font-weight: 600;
+    font-weight: 500;
     color: lightyellow;
+    padding-right: 150px;
+    text-align: left;
 }
 
 .img-darken h2 {
@@ -275,88 +264,106 @@ body {
     filter: brightness(10%);
 }
 
-
-/*Espanol Page Styles*/
-
-.nav-wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 38px;
-}
-
-.left-side {
-    display: flex;
-    display: flex;
-}
-
-.nav-wrapper > .left-side > div {
-    margin-right: 20px;
-    font-size: 0.9em;
-    text-transform: uppercase;
-    padding-top: 10px;
-}
-
-.nav-wrapper > .center > div {
-    padding-left: px;
-}
-
-.nav-wrapper > .right-side > div {
-    display:flex;
-    font-size: 1em;
-    padding-top: 10px;
-    padding-right: 5px;
-}
-
-
-.nav-link-wrapper {
-    height: 22px;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;
-}
-
-.nav-link-wrapper a {
-    color: #8a8a8a;
-    text-decoration: none;
-    transition: color 0.5s;
-}
-
-.nav-link-wrapper:hover {
-    border-bottom: 1px solid white;
-}
-
-.nav-link-wrapper a:hover {
-    color: whitesmoke;
-}
-
-.active-nav-link {
-    border-bottom: 1px solid white;
-}
-
-.active-nav-link a {
-    color: black !important;
-}
-
-.two-column-wrapper {
+.portfolio-items-wrapper-about {
     display: grid;
-    color: whitesmoke;
-    padding: 0px;
-    padding-left: 115px;
-    padding-right: px;
+    grid-template-columns: 1fr;   
+    padding: px;
+    padding-left: 30px;
+    padding-right: 30px;
+
 }
 
-.img-text-wrapper .subtitleAboutEspanol {
-    text-align: left;
-    padding-bottom: 20px;
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background-about {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
     padding-right: 100px;
 }
 
-.img-text-wrapper .subtitleAboutEspanol {
+.logo-wrapper img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.img-text-wrapper .subtitle-left{
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+    padding-right: 55px;
+
+}
+
+.img-text-wrapper .subtitle-center {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+    padding-right: 36px;
+    padding-bottom: 30px;
+}
+
+.img-text-wrapper .subtitle-right {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+    padding-right: 60px;
+    padding-bottom: 30px;
+}
+
+
+.img-text-wrapper:hover .subtitle-left {
+    font-weight: 600;
+    color: lightgray;
+}
+
+.img-text-wrapper:hover .subtitle-center {
+    font-weight: 600;
+    color: lightgray;
+}
+
+.img-text-wrapper:hover .subtitle-right {
+    font-weight: 600;
+    color: lightgray;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+
+/*Espanol Page Styles*/
+
+.img-text-wrapper .subtitleEspanol {
+    text-align: left;
+    padding-bottom: 45px;
+    padding-left: 55px;
+}
+
+.img-text-wrapper .subtitleEspanol {
     transition: 1s;
     font-weight: 500;
     color: transparent;
 }
 
-.img-text-wrapper:hover .subtitleAboutEspanol {
+.img-text-wrapper:hover .subtitleEspanol {
     font-weight: 500;
     color: lightgray;
 }
@@ -366,21 +373,108 @@ body {
     filter: brightness(10%);
 }
 
-.img-text-wrapper .subtitleAboutEspanol h2 {
+.img-text-wrapper .subtitleEspanol h2 {
     transition: 1s;
     font-weight: 500;
     color: transparent;
 }
 
-.img-text-wrapper:hover .subtitleAboutEspanol h2 {
+.img-text-wrapper:hover .subtitleEspanol h2 {
     font-weight: 500;
     color: lightyellow;
+    padding-right: 150px;
+    text-align: left;
 }
 
 .img-darken h2 {
     transition: 1s;
     filter: brightness(10%);
 }
+
+.portfolio-items-wrapper-espanol {
+    display: grid;
+    grid-template-columns: 1fr;   
+    padding: px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background-espanol {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo-wrapper img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.img-text-wrapper .subtitle-left{
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+    padding-right: 55px;
+
+}
+
+.img-text-wrapper .subtitle-center {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+    padding-right: 36px;
+    padding-bottom: 30px;
+}
+
+.img-text-wrapper .subtitle-right {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+    padding-right: 35px;
+    padding-bottom: 30px;
+}
+
+
+.img-text-wrapper:hover .subtitle-left {
+    font-weight: 600;
+    color: lightgray;
+}
+
+.img-text-wrapper:hover .subtitle-center {
+    font-weight: 600;
+    color: lightgray;
+}
+
+.img-text-wrapper:hover .subtitle-right {
+    font-weight: 600;
+    color: lightgray;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
 
 
 /*Contact Page Styles*/
@@ -404,7 +498,7 @@ body {
 }
 
 .nav-wrapper > .center > div {
-    padding-left: ;
+ 
 }
 
 .nav-wrapper > .right-side > div {
@@ -443,19 +537,19 @@ body {
     color: black !important;
 }
 
-.img-text-wrapper .subtitleAboutContact {
-    text-align: left;
-    padding-bottom: 45px;
-    padding-left: 55px;
+.img-text-wrapper .subtitleContact {
+    text-align: center;
+    padding-bottom: px;
+    padding-left: px;
 }
 
-.img-text-wrapper .subtitleAboutContact {
+.img-text-wrapper .subtitleContact {
     transition: 1s;
     font-weight: 500;
     color: transparent;
 }
 
-.img-text-wrapper:hover .subtitleAboutContact {
+.img-text-wrapper:hover .subtitleContact {
     font-weight: 500;
     color: lightgray;
 }
@@ -465,20 +559,177 @@ body {
     filter: brightness(10%);
 }
 
-.img-text-wrapper .subtitleAboutContact h2 {
+.img-text-wrapper .subtitleContact h2 {
     transition: 1s;
     font-weight: 500;
     color: transparent;
 }
 
-.img-text-wrapper:hover .subtitleAboutContact h2 {
+.img-text-wrapper:hover .subtitleContact h2 {
     font-weight: 500;
     color: lightyellow;
-    padding-right: 150px;
+    padding-left: 45px;
     text-align: center;
 }
 
 .img-darken h2 {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+.portfolio-items-wrapper-contact {
+    display: grid;
+    grid-template-columns: 1fr;   
+    padding: px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background-contact {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: px;
+    padding-right: px;
+}
+
+.logo-wrapper img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.img-text-wrapper .subtitle-left{
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+    padding-right: px;
+
+}
+
+.img-text-wrapper .subtitle-center {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+    padding-right: px;
+    padding-bottom: 30px;
+}
+
+.img-text-wrapper .subtitle-right {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+    padding-right: px;
+    padding-bottom: 30px;
+}
+
+
+.img-text-wrapper:hover .subtitle-left {
+    font-weight: 600;
+    color: lightgray;
+}
+
+.img-text-wrapper:hover .subtitle-center {
+    font-weight: 600;
+    color: lightgray;
+}
+
+.img-text-wrapper:hover .subtitle-right {
+    font-weight: 600;
+    color: lightgray;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+
+
+/*Employment Law Page Styles*/
+
+
+/*law Page Styles*/
+
+#demo-box-employment-law {
+    background-color: rgb(84, 129, 103);
+    height: 400px;
+    width: 1100px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top:40px;
+    padding:40px;
+    font-size: 1.3em;
+    font-weight: 400;
+    color: white;
+}
+
+#demo-box-criminal-defense {
+    background-color: rgb(212, 211, 209) ;
+    height: 400px;
+    width: 1100px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+    padding:40px;
+}
+
+#demo-box-debt-relief {
+    background-color: rgb(197, 219, 228);
+    height: 400px;
+    width: 1100px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top:40px;
+    padding:40px;
+}
+
+.portfolio-item--wrapper > .portfolio-img-background-about > div {
+    height:350px;
+    width:600px;
+}
+
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+    padding-right: 36px;
+    padding-top: 10px;
+    
+}
+
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: lightyellow;
+}
+
+.img-darken {
     transition: 1s;
     filter: brightness(10%);
 }
