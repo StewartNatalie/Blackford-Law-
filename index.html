@@ -1,151 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<head>
-<meta charset="utf-8" />
-<title>Page Title</title>
-<link rel="stylesheet" href="styles.css">
-</head>
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name = "HandheldFriendly" content="true">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta content="yes" name="apple-touch-fullscreen"/>
+        <meta name= "apple-mobile-web-app-status-bar-style" content="black"/>
 
-<body>
+        <title>Blackford Justice</title>
+        <link rel="shortcut icon" type="image/png" href="images/favicon1.png">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Barlow+Semi+Condensed&family=Gothic+A1&family=IBM+Plex+Sans+Condensed:wght@200&family=IBM+Plex+Sans:wght@300&family=Mulish:wght@300&family=News+Cycle&family=Noto+Sans+JP:wght@300&family=Yantramanav:wght@300&display=swap" rel="stylesheet">
 
-    <div class="container">
+        <link rel="stylesheet" href="styles.css">
 
-        <div class="nav-wrapper">
-            <div class="left-side">
-                <div class="nav-link-wrapper active-nav-link">
-                    <a href="index.html">Home</a>
-                </div>
-                <div class="nav-link-wrapper">    
-                    <a href="law.html">Law</a>
-                </div>
-                <div class="nav-link-wrapper">    
-                    <a href="about.html">About</a>
-                </div>
-                <div class="nav-link-wrapper">    
-                    <a href="contact.html">Contact</a>
-                </div>
-                <div class="nav-link-wrapper">    
-                    <a href="español.html">Español</a>
-                </div>
-            </div>
-            
-            <a href="index.html">
-            <div class="center">
-                <div class="logo-img-wrapper">
-                    <img src="images/logovert.jpg" height="40px" width="50px"/>
-                </div>
-            </div>
-            </a>    
+        <script src="main.js" defer></script>
 
 
-            <div class="right-side">
-                <div class="brand">
+    </head>
+
+    <body>
+
+        <header class="fixed">
+        <div class ="nav">              
+            <div class ="left-side">
+                <div class ="brand">
                     <div> LAW OFFICE OF ALEXANDER BLACKFORD </div>
                 </div>
+            </div>      
+            
+            <div class ="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="español.html">Español</a></li>
+                <li><a href="contact.html">Contact</a></li>              
             </div>
             
-
+            <div class ="hamburger">
+                <div class="line1"></div>
+                <div class="line3"></div>
+            </div>
         </div>
+        </header>
         
-        <div class="content-wrapper">
-            
-            <a href="law.html">
-            <div class="portfolio-items-wrapper">
-
-                <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-image:url(images/constructionhappy.jpg)"></div>
-                            
-                    <div class="img-text-wrapper">
-                        <div class="logo-wrapper">
-                        </div>
-
-                        <div class="subtitle-left">
-                            <h2>Compensation for Injured Workers</h2>
-                        </div> 
-                    </div>
-                </div>
-             
-
-               
-                <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-image:url(images/jail6a.jpg)" img id="second"></div>
-                   
-                    <div class="img-text-wrapper">
-                        <div class="logo-wrapper">
-                            <img src="" />
-                        </div>
-
-                        <div class="subtitle-center">
-                            <h2>Criminal Defense</h2>
-                            <p></p>
-                        </div> 
-
-                    </div>
-                </div>
-           
-
-                
-                <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style= "background-image:url(images/happy1.jpg)" img id="third"></div>
-
-                    <div class="img-text-wrapper">
-                        <div class="logo-wrapper">
-                            <img src="">
-                        </div>
-
-                        <div class="subtitle-right">
-                            <h2>Relief for Debtors</h2>
-                        </div> 
-
-                    </div>
-                </div>
-                
-
-            </div>
-            </a>
-          
+        <div class="intro">
+            <div class="slideShowImages" style="background-image:url(images/ADDconstruction6.jpg)"></div>
+            <div class="slideShowImages" style="background-image:url(images/empower3.jpg)"></div>
         </div>
-    </div>
-
-    <div id="demo-box-top">
-    </div>
-
-    <div id="demo-box">
-    <div class= "footer-top">
-        <H3>
-        Dignity | Equality | a Fair Settlement
-        </H3>
-        <p>
-        Tangible results in <a href="law.html"> workers compensation</a> | <a href="law.html">employment law</a>,<a href="law.html"> criminal defense</a> and <a href="law.html">debt relief</a>. 
-        </p>
-        <p>
-        Call us today for a free consultation at (800) 988-9169 or <a href="contact.html"> send</a> us an email! We're here to help.
-        </p>
-    </div>
-    </div>
-
-    <div id="demo-box-bottom">
-    </div>
-
-    <div class= "footer">
-        <p>© 2020 The Law Office of Alexander Blackford. All Rights Reserved. | (800) 988 - 9169 | 3756 W. Avenue 40 Suite K 450 Los Angeles California 90065 | Website by DSGNstuff  
-        </p>
-    </div>
-</body>
-
-<script>
-    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')   
-
-portfolioItems.forEach(portfolioItem => {
-    portfolioItem.addEventListener('mouseover', () => {
-        portfolioItem.childNodes[1].classList.add('img-darken');
-    })
-    portfolioItem.addEventListener('mouseout', () => {
-        portfolioItem.childNodes[1].classList.remove('img-darken');
-    })
-})
-
-</script>
+                  
+        <footer>
+            <div class="footer">
+                <p>© 2020 Law Office of Alexander Blackford ・ 3756 W. Av 40 Ste K 450 LA CA 90065 ・ Website by Natalie Stewart @ DSGNstuff.com
+                </p>
+            </div>
+        </footer>
+                  
+        <script src="app.js"></script> 
+    
+    </body>
 
 </html>
