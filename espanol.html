@@ -1,100 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
-<head>
-<meta charset="utf-8" />
-<title>Page Title</title>
-<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-</head>
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name = "HandheldFriendly" content="true">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta content="yes" name="apple-touch-fullscreen"/>
+        <meta name= "apple-mobile-web-app-status-bar-style" content="black"/>
+        <title>Blackford Justice</title>
+        <link rel="shortcut icon" type="image/png" href="images/favicon1.png">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Barlow+Semi+Condensed&family=Gothic+A1&family=IBM+Plex+Sans+Condensed:wght@200&family=IBM+Plex+Sans:wght@300&family=Mulish:wght@300&family=News+Cycle&family=Noto+Sans+JP:wght@300&family=Yantramanav:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <script src="main.js" defer></script>
+    </head>
 
-<body>
-    
-    <div class="container">
-        <div class="nav-wrapper">
+    <body>
+        <header class="fixed">
+        <div class="nav">              
             <div class="left-side">
-                <div class="nav-link-wrapper active-nav-link">
-                    <a href="index.html">Home</a>
-                </div>
-                <div class="nav-link-wrapper">    
-                    <a href="law.html">Law</a>
-                </div>
-                <div class="nav-link-wrapper">    
-                    <a href="about.html">About</a>
-                </div>
-                <div class="nav-link-wrapper">    
-                    <a href="contact.html">Contact</a>
-                </div>
-                <div class="nav-link-wrapper">    
-                    <a href="español.html">Español</a>
-                </div>
-            </div>
-            
-            <a href="index.html">
-            <div class="center">
-                <div class="logo-img-wrapper">
-                    <img src="images/logovert.jpg" height="40px" width="50px"/>
-                </div>
-            </div>
-            </a>    
-
-
-            <div class="right-side">
                 <div class="brand">
                     <div> LAW OFFICE OF ALEXANDER BLACKFORD </div>
                 </div>
+            </div>       
+            
+            <div class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="español.html">Español</a></li>
+                <li><a href="contact.html">Contact</a></li>              
             </div>
             
-
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line3"></div>
+            </div>
         </div>
-        
-            
-        <div class="content-wrapper">
-            <div class="portfolio-items-wrapper-espanol">
+        </header>
 
-                <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background-espanol" style="background-image:url(images/hugs.jpg)"></div>
-
-                    <div class="img-text-wrapper">
-                        <div class="logo-wrapper">
-                            <img src="">
-                        </div>
-
-                        <div class="subtitleEspanol">
-                            <h2>Acerca de</h2>
-                            <p>
-                            Alexander Blackford utiliza un enfoque basado en resultados en derecho laboral, defensa criminal y alivio de la deuda. Con soluciones legales que lo empoderan, Alex será su defensor en cada paso del camino.
-                            </p>
-                            <p>
-                            "Me convertí en abogado porque quería ayudar a las personas de manera significativa. Me lesioné en el trabajo y aprendí que hay que ponerse de pie y luchar por la igualdad y la justicia. Pasé mi carrera haciendo asegurarme de que mis clientes reciban los acuerdos que se les deben, la mejor atención médica disponible y la justicia que merecen ".
-                            </p>
-                            <p>
-                            - Alex Blackford
-                            </p>
-                            <h3>
-                            Llámenos para una consulta gratuita al (800) 988-9169 o envíanos un email. 
-                            Sirviéndole en todos California. 
-                            </h3>
-                        </div>
+        <div class="portfolio-items-wrapper-about">
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background-about" style="background-image:url(images/tree2.jpg)"></div>
+                <div class="img-text-wrapper">                       
+                    <div class="subtitleEspanol">
+                        <h2>Acerca de</h2>
+                        <p>
+                        Alexander Blackford utiliza un enfoque basado en resultados en derecho laboral y compensación de trabajadores. Con soluciones legales que lo empoderan, Alex será su defensor en cada paso del camino.
+                        </p>
                     </div>
-                </div>        
+                </div>
             </div>
         </div>
-    </div>
 
-</body>
+        <div class="container2">
+            <div class="demo-box-about">   
+                        <p>
+                        "Me convertí en abogado porque quería ayudar a la gente de una manera significativa.
+                        He sido marginado y lesionado en el trabajo, así que entiendo cuán poderosa puede ser la ley de compensación laboral y laboral. Aprendí que hay que levantarse y luchar por la igualdad y
+                        justicia. He dedicado mi carrera a asegurarme de que mis clientes
+                        recibir los acuerdos que se les adeuda, la mejor atención médica disponible y
+                        la justicia que merecen ".
+                        </p>
+                        <h3>
+                        Alex Blackford
+                        </h3>
+            </div>
+        </div>             
 
-<script>
-    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')   
+        <div class ="email">
+            <div class="mail-form-text">
+                <p>Llámenos para una consulta gratuita al <br> (800) 988-9169 o envianos un email.</p>
+            </div>
 
-portfolioItems.forEach(portfolioItem => {
-    portfolioItem.addEventListener('mouseover', () => {
-        portfolioItem.childNodes[1].classList.add('img-darken');
-    })
-    portfolioItem.addEventListener('mouseout', () => {
-        portfolioItem.childNodes[1].classList.remove('img-darken');
-    })
-})
-</script>
+            <div class="mail-form-submit">
+                <form id="contact-form" method="post" action="mailto:alex@blackfordjustice.com">
+               
+                    <input name="name" type="text" class="form-control" placeholder="tu nombre" required><br>
+                    
+                    <input name="email" type="email" class="form-control" placeholder="tu correo electrónico" required><br>
+                    
+                    <input name="phone" type="text" class="form-control" placeholder="su teléfono"><br>
+                        
+                    <input name="message" type="text" class="form-control" placeholder="mensaje" required><br>
+
+                    <input type="submit" class="form-control-submit" value="enviar mensaje">
+                </form>                  
+            </div>
+        </div>
+
+        <script>
+            const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')   
+
+            portfolioItems.forEach(portfolioItem => {
+                portfolioItem.addEventListener('mouseover', () => {
+                    portfolioItem.childNodes[1].classList.add('img-darken');
+                })
+                portfolioItem.addEventListener('mouseout', () => {
+                    portfolioItem.childNodes[1].classList.remove('img-darken');
+                })
+            })
+        </script>
+
+ 
+
+        
+        <script src="app.js"></script>
+ 
+    </body>
+
+
+
 
 </html>
