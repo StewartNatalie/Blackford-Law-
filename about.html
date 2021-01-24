@@ -1,103 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<head>
-<meta charset="utf-8" />
-<title>Page Title</title>
-<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-</head>
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name = "HandheldFriendly" content="true">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta content="yes" name="apple-touch-fullscreen"/>
+        <meta name= "apple-mobile-web-app-status-bar-style" content="black"/>        
+        <title>Blackford Justice</title>
+        <link rel="shortcut icon" type="image/png" href="images/favicon1.png">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Barlow+Semi+Condensed&family=Gothic+A1&family=IBM+Plex+Sans+Condensed:wght@200&family=IBM+Plex+Sans:wght@300&family=Mulish:wght@300&family=News+Cycle&family=Noto+Sans+JP:wght@300&family=Yantramanav:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <script src="main.js" defer></script>
+    </head>
 
-<body>
-   
-    <div class="container">
-        <div class="nav-wrapper">
+    <body>
+        <header class="fixed">
+        <div class="nav">              
             <div class="left-side">
-                <div class="nav-link-wrapper active-nav-link">
-                    <a href="index.html">Home</a>
-                </div>
-                <div class="nav-link-wrapper">    
-                    <a href="law.html">Law</a>
-                </div>
-                <div class="nav-link-wrapper">    
-                    <a href="about.html">About</a>
-                </div>
-                <div class="nav-link-wrapper">    
-                    <a href="contact.html">Contact</a>
-                </div>
-                <div class="nav-link-wrapper">    
-                    <a href="español.html">Español</a>
-                </div>
-            </div>
-            
-            <a href="index.html">
-            <div class="center">
-                <div class="logo-img-wrapper">
-                    <img src="images/logovert.jpg" height="40px" width="50px"/>
-                </div>
-            </div>
-            </a>    
-
-
-            <div class="right-side">
                 <div class="brand">
                     <div> LAW OFFICE OF ALEXANDER BLACKFORD </div>
                 </div>
+            </div>      
+            
+            <div class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="español.html">Español</a></li>
+                <li><a href="contact.html">Contact</a></li>              
             </div>
             
-
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line3"></div>
+            </div>
         </div>
-        
-            
-        <div class="content-wrapper">
-            <div class="portfolio-items-wrapper-about">
+        </header>
 
-                <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background-about" style="background-image:url(images/ABOUTBLUR.jpg)"></div>
-
+        <div class="portfolio-items-wrapper-about">
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background-about" style="background-image:url(images/leaves.jpg)"></div>
                     <div class="img-text-wrapper">
-                        <div class="logo-wrapper">
-                            <img src="">
-                        </div>
-
                         <div class="subtitleAbout">
-                            <h2>About</h2>
+                            <h2>
+                            About
+                            </h2>                
                             <p>
                             Alexander Blackford uses 
-                            a results-driven approach in employment law, criminal  
-                            defense and debt relief. With legal solutions that empower you, 
+                            a results-driven approach in employment law and workers compensation. With legal solutions that empower you, 
                             Alex will be your advocate every step of the way.
                             </p>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>   
+
+        <div class="container2">
+            <div class="demo-box-about">
                             <p>
                             "I became an attorney because I wanted to help people in a meaningful way. 
-                            I've been injured at work, and I learned that you have to stand up and fight for equality and 
+                            I've been marginalized and injured at work, so I understand just how powerful employment and workers compensation law can be. I learned that you have to stand up and fight for equality and 
                             fairness. I've spent my career making sure that my clients 
                             receive the settlements they're owed, the best healthcare available, and 
                             the justice they deserve." 
                             </p>
-                            <p>
-                            - Alex Blackford
-                            </p> 
-                        </div>
-                    </div>
-                </div>        
+                            <h3>
+                            Alex Blackford
+                            </h3>
             </div>
         </div>
 
-    </div>
-</body>
+        <script>
+            const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')   
 
-<script>
-    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')   
-
-portfolioItems.forEach(portfolioItem => {
-    portfolioItem.addEventListener('mouseover', () => {
-        portfolioItem.childNodes[1].classList.add('img-darken');
-    })
-    portfolioItem.addEventListener('mouseout', () => {
-        portfolioItem.childNodes[1].classList.remove('img-darken');
-    })
-})
-</script>
-
+            portfolioItems.forEach(portfolioItem => {
+                portfolioItem.addEventListener('mouseover', () => {
+                    portfolioItem.childNodes[1].classList.add('img-darken');
+                })
+                portfolioItem.addEventListener('mouseout', () => {
+                    portfolioItem.childNodes[1].classList.remove('img-darken');
+                })
+            })
+        </script>
+       
+        <script src="app.js"></script> 
+    </body>
 </html>
